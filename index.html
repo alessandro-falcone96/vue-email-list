@@ -12,7 +12,8 @@
   <body>
 
     <div id="app">
-      <h1>Lista 10 email random</h1>
+      <h1>Lista di email random</h1>
+      <input type="text" name="" value="" v-model="numero" placeholder="Numero di email da creare">
       <button type="button" @click="generaEmail">Genera</button>
       <ul>
         <li v-for="email in listaEmail">{{email}}</li>

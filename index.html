@@ -12,9 +12,10 @@
   <body>
 
     <div id="app">
-      <button type="button" @click="generateEmail">PREMI</button>
+      <h1>Lista 10 email random</h1>
+      <button type="button" @click="generaEmail">Genera</button>
       <ul>
-        <li>{{email}}</li>
+        <li v-for="email in listaEmail">{{email}}</li>
       </ul>
     </div>
 
